@@ -1,0 +1,10 @@
+#cloud-config
+autoinstall:
+  version: 1
+  user:
+    name: test
+    passwd: $6$N5/vB1ZzTGKhtR.G$/Xxp1nA1xOtUXyVXKzMNIZ4Ha8DOpoUOCju.RvR83cORkTjt110QGh4f6wX2foqAvZzg8UicvbQUYyZ6gMgqM1
+    groups: [sudo]
+  package-update: true
+  packages:
+    - vim
